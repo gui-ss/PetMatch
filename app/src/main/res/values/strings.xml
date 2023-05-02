@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name" translatable="false">PetMatch</string>
+    <string name="title_activity_splash" translatable="false">FullscreenActivity</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <string name="title_welcome" translatable="false">PetMatch</string>
+
+    <!--    HOME   -->
+    <string name="home_welcome_string">Bem vindo, %1$s</string>
+    <string name="home_register_button">Cadastre um pet</string>
+    <string name="home_mypets_button">Meus pets</string>
+    <string name="home_likedpets_button">Pets curtidos</string>
+    <string name="home_search_pets_button">Buscar pets</string>
+    <string name="home_feedtitle_string">Acompanhe as Novidades do \nMundo Pet</string>
+    <string name="home_feedtext_string">Uma dieta equilibrada é um dos principais \npilares para a
+        manu...</string>
+    <string name="home_feedtext2_string">Nova loja Petz em Mauá será inaugurada \nem outubro...</string>
+    <string name="home_supporters_string">Apoiadores</string>
+    <string name="home_readmore_string">Ler mais</string>
+    <string name="home_profile_string">Meu perfil</string>
+    <string name="home_petweek_string">Petweek</string>
+    <string name="hpme_my_pets_liked">Meus pets curtidos</string>
+    <string name="home_aboutapp_string">Sobre o app</string>
+    <string name="home_help_string">Ajuda</string>
+    <string name="home_logout_string">Sair</string>
+    <string name="home_searchtitle_string">Busque pelo pet perfeito</string>
+    <string name="home_dog_string">Cachorro</string>
+    <string name="home_cat_string">Gato</string>
+    <string name="home_gender_string">Sexo</string>
+    <string name="home_gender_male_string">Macho</string>
+    <string name="home_gender_female_string">Fêmea</string>
+    <string name="home_nickname_string">Apelido</string>
+    <string name="home_age_string">Idade</string>
+    <string name="home_breed_string">Raça</string>
+    <string name="home_behavior_string">Comportamento</string>
+    <string name="home_size_string">Porte</string>
+    <string name="home_sociable_string">Sociável</string>
+    <string name="home_castrated_string">Castrado</string>
+    <string name="home_search_string">Buscar</string>
+
+
+    <!--    WELCOME   -->
+    <string name="welcome_signup_button">Quero me cadastrar</string>
+    <string name="welcome_signin_button"><u>Já sou cadastrado</u></string>
+
+    <!--    SIGN IN-->
+
+    <string name="signin_email_text">E-mail</string>
+    <string name="signin_password_text">Senha</string>
+    <string name="signin_forgotpw_text">Esqueceu sua senha?</string>
+    <string name="signin_incorrect_text">E-mail ou senha incorretos.</string>
+    <string name="signin_enter_button">Entrar</string>
+    <string name="signin_back_button">Voltar</string>
+
+    <!--    ERRO E SUCESSO   -->
+    <string name="erro_signup_text">Não foi possível se cadastrar.\nPor favor tente novamente mais tarde</string>
+    <string name="erro_profile_text">Não foi possível editar as informações. Por favor tente novamente mais tarde</string>
+    <string name="error_signup_pet_text">Não foi possível cadastrar o pet.\nPor favor tente novamente mais tarde</string>
+    <string name="sucesso_signup_text">Cadastrado com sucesso!</string>
+    <string name="sucesso_profile_text">Perfil atualizado com sucesso!</string>
+    <string name="sucesso_profile_pet_text">Pet atualizado com sucesso!</string>
+    <string name="sucesso_signup_pet_text">Pet cadastrado com sucesso!</string>
+
+    <!--    Register/PROFILE  -->
+    <string name="profile_title_text">Meu Perfil</string>
+    <string name="register_one_title_text">Primeiro precisamos de algumas informações</string>
+    <string name="register_one_name_text">Nome completo</string>
+    <string name="register_one_email_text">E-mail</string>
+    <string name="register_one_password_text">Senha</string>
+    <string name="register_next_button">Próximo</string>
+    <string name="register_two_title_text">Informações essenciais</string>
+    <string name="register_two_cpf_text">CPF</string>
+    <string name="register_two_cellphone_text">Celular</string>
+    <string name="register_two_birthday_text">Data de Nascimento</string>
+    <string name="register_three_title_text">Informações sobre sua\nlocalização</string>
+    <string name="register_three_cep_text">CEP</string>
+    <string name="register_three_street_text">Rua</string>
+    <string name="register_three_district_text">Bairro</string>
+    <string name="register_three_city_text">Cidade</string>
+    <string name="register_three_state_text">Estado</string>
+    <string name="register_four_title_text">Concluir cadastro</string>
+    <string name="register_four_safedata_text">Todos os seus dados estarão guardados e seguros.</string>
+    <string name="register_four_news_text">Aceito receber novidades do\nPetMatch por e-mail.</string>
+    <string name="register_four_terms_text">Aceito os Termos e Condições\nde Uso e Política de Privacidade.</string>
+    <string name="register_four_final_button">Finalizar</string>
+    <string name="profile_save_button">Salvar</string>
+
+    <string-array name="size_pet">
+        <item>Pequeno</item>
+        <item>Médio</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string-array name="behavior_pet">
+        <item>Calmo</item>
+        <item>Bravo</item>
+        <item>Amigavel</item>
+    </string-array>
+
+    <string-array name="castrated_pet">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+
+    <string-array name="sociable_pet">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+
+    <string-array name="sex_pet">
+        <item>Macho</item>
+        <item>Fêmea</item>
+    </string-array>
+
+    <string-array name="specie_pet">
+        <item>Cachorro</item>
+        <item>Gato</item>
+    </string-array>
+
+    <!--    HELP  -->
+
+    <string name="help_title_text">Ajuda</string>
+    <string name="help_subtitle_text">Está tendo problemas ao utilizar o PetMatch?</string>
+    <string name="help_support_text">Entre em contato conosco através de nosso e-mail, para que possamos te ajudar.</string>
+    <string name="help_copied_text">E-mail copiado!</string>
+
+<!--    PETWEEK -->
+
+    <string name="petweek_title1_text">"O que é PetWeek?"</string>
+    <string name="petweek_title2_text">"Escolhe o pet"</string>
+    <string name="petweek_title3_text">"Cuide durante uma semana"</string>
+    <string name="petweek_title4_text">"Faça a adoção"</string>
+    <string name="petweek_content1_text">"Iniciativa para diminuir o abandono de animais e ter maior chance de MATCH entre adotante e pet.\n"</string>
+    <string name="petweek_content2_text">"Após o adotante escolher o pet, o doador irá entrar em contato para alinhamento e orientações."</string>
+    <string name="petweek_content3_text">"O futuro adotante poderá conviver com o animal durante uma semana e avaliar se houve a “química” entre eles."</string>
+    <string name="petweek_content4_text">"Após essa semana, caso queira ficar com o animal, a adoção será concretizada e teremos uma MATCH perfeito."</string>
+
+<!--    REGISTER / EDIT PET-->
+
+    <string name="register_pet_title_text">Cadastre seu pet</string>
+    <string name="edit_pet_title_text">Editar Pet</string>
+    <string name="home_specie_string">Espécie</string>
+    <string name="register_pet_vaccine_title_text">Quais vacinas seu pet\njá tomou?</string>
+    <string name="register_pet_vaccine_text">Vacinas</string>
+    <string name="register_pet_vaccine_name_text">Nome da vacina</string>
+    <string name="register_pet_vaccine_date_text">Data</string>
+    <string name="register_pet_vaccine_dose_text">Dose</string>
+    <string name="register_pet_vaccine_add_button">Adicionar</string>
+    <string name="register_pet_vaccine_empty_text">Você não adicionou nenhuma vacina.</string>
+</resources>

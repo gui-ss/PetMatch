@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="16dp"
+    android:layout_marginTop="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/btn_new_pet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:background="@drawable/background_card_my_pets"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Deu Match!"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:fontFamily="@font/circular_std_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ellon Musk aprovou José para uma possível adoção de Nina."
+            android:textColor="#595959"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/circular_std_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/gridDoador"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/imgDoador"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:background="@drawable/background_button_add_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_doador"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/img_new_user"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_description_info_doador"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/circular_std_medium"
+                android:text="Doador - Ellon Musk\n São Paulo - SP\nEmail: ellon@gmail.com\nTelefone: (11) 94331-1330"
+                android:textAlignment="center"
+                android:textColor="#595959"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/view3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgDoador" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/imgAdotante"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:background="@drawable/background_button_add_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_adotante"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/img_new_user"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_description_info_adotante"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/circular_std_medium"
+                android:text="Adotante - Ellon Musk\n São Paulo - SP\nEmail: ellon@gmail.com\nTelefone: (11) 94331-1330"
+                android:textAlignment="center"
+                android:textColor="#595959"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view3"
+                app:layout_constraintTop_toBottomOf="@id/imgAdotante" />
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="55dp"
+                android:background="@color/grey"
+                app:layout_constraintTop_toBottomOf="@id/imgDoador"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="15dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/imgPet"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_button_add_image"
+                app:layout_constraintEnd_toStartOf="@+id/imgAdotante"
+                app:layout_constraintStart_toEndOf="@+id/imgDoador"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_pet"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/img_new_user"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

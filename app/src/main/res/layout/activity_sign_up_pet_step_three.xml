@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+        tools:context=".activities.signuppet.SignUpPetStepThreeActivity"
+        android:background="#F9F9F9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_seta"
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/register_pet_vaccine_title_text"
+            android:textColor="@color/grey_9"
+            android:fontFamily="@font/circular_std_medium"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/img_seta"
+            app:layout_constraintTop_toBottomOf="@id/img_seta" />
+
+        <EditText
+            android:id="@+id/input_name_vaccine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_pet_vaccine_name_text"
+            android:fontFamily="@font/circular_std_medium"
+            android:textColorHint="@color/grey_8"
+            android:textColor="@color/grey_3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/input_date_vaccine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_pet_vaccine_date_text"
+            android:fontFamily="@font/circular_std_medium"
+            android:textColorHint="@color/grey_8"
+            android:textColor="@color/grey_3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:mask="##/##/####"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="date"
+            app:layout_constraintTop_toBottomOf="@id/input_name_vaccine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+            <EditText
+                android:id="@+id/input_dose_vaccine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_pet_vaccine_dose_text"
+                android:fontFamily="@font/circular_std_medium"
+                android:textColorHint="@color/grey_8"
+                android:textColor="@color/grey_3"
+                android:textSize="18sp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@id/input_date_vaccine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_background_disable"
+                android:elevation="4dp"
+                android:enabled="false"
+                android:fontFamily="@font/circular_std_medium"
+                android:text="@string/register_pet_vaccine_add_button"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_7"
+                android:layout_marginTop="26dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_dose_vaccine" />
+
+            <TextView
+                android:id="@+id/tv_title_vaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_pet_vaccine_text"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_add"
+                android:layout_marginTop="26dp"
+                android:fontFamily="@font/circular_std_medium"
+                android:textColor="@color/orange_2" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_vaccine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_description_vaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_pet_vaccine_empty_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                app:layout_constraintBottom_toTopOf="@id/btn_finish_pet"
+                android:layout_marginTop="26dp"
+                android:fontFamily="@font/circular_std_medium"
+                android:layout_marginBottom="50dp"
+                android:textSize="18sp"/>
+
+
+            <Button
+                android:id="@+id/btn_finish_pet"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:fontFamily="@font/circular_std_medium"
+                android:text="@string/register_four_final_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_loading_signuppet"
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_vaccine">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loading" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

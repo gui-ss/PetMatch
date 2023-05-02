@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.signup.SignUpStepOneActivity"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+        <ImageView
+            android:id="@+id/img_seta"
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/register_one_title_text"
+            android:textColor="@color/grey_9"
+            android:fontFamily="@font/circular_std_medium"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_seta"
+            app:layout_constraintTop_toBottomOf="@id/img_seta" />
+
+        <EditText
+            android:id="@+id/input_nomeCompleto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="@string/register_one_name_text"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:fontFamily="@font/circular_std_medium"
+            android:textStyle="bold"
+            android:textColorHint="@color/grey_8"
+            android:textColor="@color/grey_3"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_error_name_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/circular_std_medium"
+            android:text="Tem certeza que esta completo?"
+            app:layout_constraintTop_toBottomOf="@id/input_nomeCompleto"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/input_emailCadastro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:hint="@string/register_one_email_text"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/circular_std_medium"
+                android:textColorHint="@color/grey_8"
+                android:textColor="@color/grey_3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@id/input_nomeCompleto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_error_email_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/circular_std_medium"
+            android:text="E-mail inválido."
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/input_emailCadastro"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <EditText
+                android:id="@+id/input_senhaCadastro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:drawableEnd="@drawable/ic_eye_closed_password"
+                android:hint="@string/register_one_password_text"
+                android:inputType="textPassword"
+                android:textColorHint="@color/grey_8"
+                android:textColor="@color/grey_3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@id/input_emailCadastro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_error_password_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/red"
+            android:text="A senha precisa ter pelo menos 8 caracteres."
+            app:layout_constraintTop_toBottomOf="@id/input_senhaCadastro"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/btn_prox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_background_disable"
+                android:elevation="4dp"
+                android:text="@string/register_next_button"
+                android:textAllCaps="false"
+                android:textColorHint="@color/grey_8"
+                android:textColor="@color/grey_3"
+                android:textSize="18sp"
+                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

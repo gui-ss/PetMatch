@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filterBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/filter_bottom_sheet_background"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    tools:context=".fragments.filter.FilterFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="80dp"
+        android:layout_height="5dp"
+        android:padding="10dp"
+        android:background="@drawable/item_bottom_sheet"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorDividerView"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_title_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_searchtitle_string"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_specie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+
+            <RadioButton
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:text="@string/home_dog_string"
+                android:textStyle="bold"
+                android:button="@color/transparent"
+                android:background="@drawable/radio_selector"
+                android:textColor="@drawable/text_color"
+                android:padding="16dp"
+                android:layout_margin="5dp"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:text="@string/home_cat_string"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:button="@color/transparent"
+                android:background="@drawable/radio_selector"
+                android:textColor="@drawable/text_color"
+                android:padding="16dp"
+                android:layout_margin="5dp" />
+        </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/group_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_specie"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edNicknameFilter"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_nickname_string"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_margin="16dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_edit_text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_edit_text"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edAgeFilter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_age_string"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:id="@+id/edBreedFilter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_breed_string"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_edit_text3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_edit_text2"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_size"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:hint="Porte"
+            app:layout_constraintTop_toBottomOf="@id/input_breed">
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_dropdown_size_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Porte"
+                android:fontFamily="@font/circular_std_medium"
+                android:textSize="16sp"
+                android:inputType="none"
+                android:paddingStart="10dp"
+                android:editable="false"
+                android:textColor="@color/grey_3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_sex"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:hint="Sexo"
+            app:layout_constraintTop_toBottomOf="@id/input_breed">
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_dropdown_sex_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Sexo"
+                android:fontFamily="@font/circular_std_medium"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                android:inputType="none"
+                android:editable="false"
+                android:textColor="@color/grey_3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_edit_text4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_edit_text3"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_castrated"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:hint="Castrado"
+            app:layout_constraintTop_toBottomOf="@id/input_breed">
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_dropdown_castrated_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Castrado"
+                android:fontFamily="@font/circular_std_medium"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                android:inputType="none"
+                android:editable="false"
+                android:textColor="@color/grey_3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_sociable"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:hint="Sociavel"
+            app:layout_constraintTop_toBottomOf="@id/input_breed">
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_dropdown_sociable_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Sociavel"
+                android:fontFamily="@font/circular_std_medium"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                android:inputType="none"
+                android:editable="false"
+                android:textColor="@color/grey_3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_edit_text5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_edit_text4"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_behavior"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:hint="Comportamento"
+            app:layout_constraintTop_toBottomOf="@id/input_breed">
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_dropdown_behavior_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Comportamento"
+                android:fontFamily="@font/circular_std_medium"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                android:inputType="none"
+                android:editable="false"
+                android:textColor="@color/grey_3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:text="@string/home_search_string"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_edit_text5" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorDividerView"
+        app:layout_constraintTop_toBottomOf="@id/btn_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

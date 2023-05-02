@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.signup.SignUpStepThreeActivity"
+    android:background="#F9F9F9">
+
+    <ImageView
+            android:id="@+id/img_seta"
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/register_three_title_text"
+            android:textColor="@color/grey_9"
+            android:fontFamily="@font/circular_std_medium"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/img_seta"
+            app:layout_constraintTop_toBottomOf="@id/img_seta" />
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/input_cep"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="@string/register_three_cep_text"
+            app:mask="#####-###"
+            android:maxLength="9"
+            android:inputType="number"
+            android:textColorHint="@color/grey_8"
+            android:fontFamily="@font/circular_std_medium"
+            android:textColor="@color/grey_3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_error_cep_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/red"
+            android:text="Tem certeza que esta completo?"
+            app:layout_constraintTop_toBottomOf="@id/input_cep"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/input_rua"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:hint="Rua"
+            android:enabled="false"
+            android:fontFamily="@font/circular_std_medium"
+            android:inputType="text"
+            android:textColorHint="@color/grey_8"
+            android:textColor="@color/grey_3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/input_cep"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_error_name_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/red"
+            android:text="Tem certeza que esta completo?"
+            android:fontFamily="@font/circular_std_medium"
+            app:layout_constraintTop_toBottomOf="@id/input_rua"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/input_bairro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="26dp"
+            android:hint="Bairro"
+            android:enabled="false"
+            android:inputType="text"
+            android:fontFamily="@font/circular_std_medium"
+            android:textStyle="bold"
+            android:textColorHint="@color/grey_8"
+            android:textColor="@color/grey_3"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/input_rua"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_error_neighbourhood_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/circular_std_medium"
+            android:textColor="@color/red"
+            android:text="Tem certeza que esta completo?"
+            app:layout_constraintTop_toBottomOf="@id/input_bairro"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/input_cidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:hint="Cidade"
+            android:enabled="false"
+            android:inputType="text"
+            android:fontFamily="@font/circular_std_medium"
+            android:textColorHint="@color/grey_8"
+            android:textColor="@color/grey_3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/input_bairro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_error_city_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/circular_std_medium"
+            android:textColor="@color/red"
+            android:text="Tem certeza que esta completo?"
+            app:layout_constraintTop_toBottomOf="@id/input_cidade"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/input_estado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:hint="Estado"
+            android:enabled="false"
+            android:fontFamily="@font/circular_std_medium"
+            android:inputType="text"
+            android:textColorHint="@color/grey_8"
+            android:textColor="@color/grey_3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/input_cidade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_error_state_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/red"
+            android:text="Tem certeza que esta completo?"
+            app:layout_constraintTop_toBottomOf="@id/input_estado"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_prox"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_disable"
+            android:elevation="4dp"
+            android:text="Próximo"
+            android:fontFamily="@font/circular_std_medium"
+            android:textAllCaps="false"
+            android:textColor="@color/grey_7"
+            android:textSize="18sp"
+            android:enabled="true"
+            tools:ignore="MissingConstraints"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

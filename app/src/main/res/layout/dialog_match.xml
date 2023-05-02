@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_close"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imgAdotante"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:background="@drawable/background_button_add_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="26dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_adotanter"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/img_new_user"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_name_adotante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:fontFamily="@font/circular_std_medium"
+        app:layout_constraintTop_toBottomOf="@id/imgAdotante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_local_adotante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:fontFamily="@font/circular_std_medium"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_adotante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_description_adotante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" curtiu seu pet, caso\ndeseje continuar para uma\npossível adoção, basta aprovar ou\ncaso não queria, basta recusar. "
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/circular_std_medium"
+        app:layout_constraintTop_toBottomOf="@id/tv_local_adotante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_description_adotante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/btnRefuseMatch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_refuse_match"/>
+
+        <Button
+            android:id="@+id/btnAcceptMatch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_accpt_match"
+            android:layout_marginStart="15dp"/>
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingMatch"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="10dp"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_dots"
+        android:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_about_pet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_carousel_card_pet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_edit_pet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_erro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_match.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_my_pets.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_pet_week.xml" value="0.14629629629629629" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_in.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_pet_error.xml" value="0.25" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_pet_step_one.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_pet_step_three.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_pet_step_two.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_pet_success.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_step_four.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_step_two.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sucesso.xml" value="0.25" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_terms_of_use.xml" value="0.14629629629629629" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/custom_view_vaccines.xml" value="0.14629629629629629" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/item_view_pager.xml" value="0.18" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_card_match.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_card_my_pets.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_card_my_pets_liked.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_card_petweek.xml" value="0.22" />
+        <entry key="..\:/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_filter_bottom_sheet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Isabe/OneDrive/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/drawable-v24/ic_baseline_photo_camera_24.xml" value="0.275" />
+        <entry key="..\:/Users/Isabe/OneDrive/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_erro.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/Isabe/OneDrive/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_lgpd.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/Isabe/OneDrive/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_register_four.xml" value="0.25" />
+        <entry key="..\:/Users/Isabe/OneDrive/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_register_one.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/Isabe/OneDrive/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_register_three.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/Isabe/OneDrive/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_register_two.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/Isabe/OneDrive/Documentos/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_in.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/Pichau/Desktop/git/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_about_app.xml" value="0.32146118721461187" />
+        <entry key="..\:/Users/Pichau/Desktop/git/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_about_pet.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/Pichau/Desktop/git/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_carousel_card_pet.xml" value="0.32146118721461187" />
+        <entry key="..\:/Users/Pichau/Desktop/git/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_pet_step_three.xml" value="0.32146118721461187" />
+        <entry key="..\:/Users/Pichau/Desktop/git/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_pet_step_two.xml" value="0.32146118721461187" />
+        <entry key="..\:/Users/Pichau/Desktop/git/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_welcome.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/Pichau/Desktop/git/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_card_my_pets.xml" value="0.32146118721461187" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/drawable/background_card_my_pets.xml" value="0.2203125" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_about_pet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_carousel_card_pet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_erro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_lgpd.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_my_pets.xml" value="0.22" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_pet_week.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_register_four.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_register_three.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_in.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sign_up_step_three.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_sucesso.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/item_view_pager.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_card_my_pets.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_card_petweek.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/grupo6/pi-3adsa-2021-1-grupo-6/APP/PetMatch/app/src/main/res/layout/layout_filter_bottom_sheet.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/drawable/backgroud_card_my_pets.xml" value="0.2740740740740741" />
+        <entry key="app/src/main/res/drawable/background_image_card_my_pets.xml" value="0.2740740740740741" />
+        <entry key="app/src/main/res/layout/activity_carousel_card_pet.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_mypets.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/item_view_pager.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_filter_bottom_sheet.xml" value="0.14895833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

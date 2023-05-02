@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.signin.SignInActivity"
+    android:background="#F9F9F9">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/signin_email_text"
+        android:textColorHint="@color/grey_8"
+        android:textColor="@color/grey_3"
+        android:textStyle="bold"
+        android:fontFamily="@font/circular_std_medium"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/signin_password_text"
+        android:textColorHint="@color/grey_8"
+        android:textColor="@color/grey_3"
+        android:textStyle="bold"
+        android:fontFamily="@font/circular_std_medium"
+        app:layout_constraintTop_toBottomOf="@id/input_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="22dp"
+        android:textSize="18sp"
+        android:drawableEnd="@drawable/ic_eye_closed_password"
+        android:paddingEnd="15dp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin_forgotpw_text"
+        android:textSize="14sp"
+        android:fontFamily="@font/circular_std_medium"
+        app:layout_constraintTop_toBottomOf="@id/input_password"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/orange_2" />
+
+    <TextView
+        android:id="@+id/tv_error_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin_incorrect_text"
+        android:fontFamily="@font/circular_std_medium"
+        android:textColor="@color/red"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_forgot_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background_disable"
+        android:elevation="4dp"
+        android:text="@string/signin_enter_button"
+        android:fontFamily="@font/circular_std_medium"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_7"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:enabled="false"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_loading"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toTopOf="@id/tv_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin_back_button"
+        android:textColor="@color/grey_3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/circular_std_medium"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

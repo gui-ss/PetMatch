@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_close"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tv_description_adotante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tem certeza que deseja deletar o pet?"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/circular_std_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_description_adotante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/btnRefuse"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_refuse_match"/>
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_accpt_match"
+            android:layout_marginStart="15dp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

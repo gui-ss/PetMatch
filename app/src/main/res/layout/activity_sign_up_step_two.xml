@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.signup.SignUpStepTwoActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+        <ImageView
+            android:id="@+id/img_seta"
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/register_two_title_text"
+            android:textColor="@color/grey_9"
+            android:fontFamily="@font/circular_std_medium"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_seta"
+            app:layout_constraintTop_toBottomOf="@id/img_seta" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_button_add_image"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_preview"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:src="@drawable/img_new_user"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/btn_new_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_add_image"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/input_cpf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_two_cpf_text"
+                android:inputType="number"
+                android:fontFamily="@font/circular_std_medium"
+                android:maxLength="14"
+                android:textColorHint="@color/grey_8"
+                android:textColor="@color/grey_3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:mask="###.###.###-##"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@id/addImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_error_cpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:textColor="@color/red"
+                android:text="CPF inválido."
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_cpf"/>
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/input_celular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_two_cellphone_text"
+                android:inputType="phone"
+                android:textColorHint="@color/grey_8"
+                android:textColor="@color/grey_3"
+                android:textSize="18sp"
+                android:fontFamily="@font/circular_std_medium"
+                android:textStyle="bold"
+                app:mask="(##)#####-####"
+                android:maxLength="14"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@id/input_cpf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/input_nascimento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_two_birthday_text"
+                android:inputType="date"
+                android:textColorHint="@color/grey_8"
+                android:textColor="@color/grey_3"
+                android:textSize="18sp"
+                android:maxLength="10"
+                app:mask="##/##/####"
+                android:fontFamily="@font/circular_std_medium"
+                android:textStyle="bold"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@id/input_celular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_error_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:textColor="@color/red"
+                android:text="Data de nascimento inválida."
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_nascimento"/>
+
+            <Button
+                android:id="@+id/btn_prox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_disable"
+                android:elevation="4dp"
+                android:text="@string/register_next_button"
+                android:textAllCaps="false"
+                android:fontFamily="@font/circular_std_medium"
+                android:textColor="@color/grey_7"
+                android:textSize="18sp"
+                android:enabled="false"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

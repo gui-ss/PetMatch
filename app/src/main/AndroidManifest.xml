@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.bandtec.petmatch">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_of"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/petmatch_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetMatch"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.match.MatchActivity"></activity>
+        <activity android:name=".activities.pet.mypetsliked.MyPetsLikedActivity" />
+        <activity android:name=".activities.pet.petsliked.PetsLikedActivity" />
+        <activity android:name=".activities.pet.editpet.EditPetActivity" />
+        <activity android:name=".activities.profile.ProfileActivity" />
+        <activity android:name=".activities.signuppet.SignUpPetErrorActivity" />
+        <activity android:name=".activities.signuppet.SignUpPetSuccessActivity" />
+        <activity
+            android:name=".activities.help.HelpActivity"
+            android:exported="true" />
+        <activity android:name=".activities.signuppet.SignUpPetStepThreeActivity" />
+        <activity android:name=".activities.signuppet.SignUpPetStepTwoActivity" />
+        <activity android:name=".activities.signuppet.SignUpPetStepOneActivity" />
+        <activity android:name=".activities.lgpd.PolicyPrivacyActivity" />
+        <activity android:name=".activities.lgpd.TermsOfUseActivity" />
+        <activity android:name=".activities.aboutapp.AboutAppActivity" />
+        <activity android:name=".activities.lgpd.LgpdHomeActivity" />
+        <activity android:name=".activities.lgpd.LgpdActivity" />
+        <activity android:name=".activities.signup.SignUpStepFourActivity" />
+        <activity android:name=".activities.signup.SignUpStepThreeActivity" />
+        <activity android:name=".activities.signup.SignUpStepTwoActivity" />
+        <activity android:name=".activities.signup.SignUpStepOneActivity" />
+        <activity android:name=".activities.pet.aboutpet.AboutPetActivity" />
+        <activity
+            android:name=".activities.petweek.PetWeekActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.pet.mypets.MyPetsActivity"
+            android:exported="true" />
+        <activity android:name=".activities.success.SuccessActivity" />
+        <activity android:name=".activities.error.ErrorActivity" />
+        <activity android:name=".activities.signin.SignInActivity" />
+        <activity android:name=".activities.pet.carouselcardpets.CarouselCardPetActivity" />
+        <activity android:name=".activities.home.HomeActivity" />
+        <activity android:name=".activities.wlecome.WelcomeActivity" />
+        <activity
+            android:name=".activities.splash.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PetMatch.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
